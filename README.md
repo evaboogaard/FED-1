@@ -37,11 +37,11 @@ https://www.smokonow.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepage 
-<img src="images/procesverslag/screenshot1.png" width="375px" alt="Smoko Home Page">
+<img src="images/procesverslag/destaat1.png" width="375px" alt="Smoko Home Page">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Detailpage
-<img src="images/procesverslag/screenshot2.png" width="375px" alt="Lil B Dumpling Ambient Light (Halloween Edition)">
+<img src="images/procesverslag/destaat2.png" width="375px" alt="Lil B Dumpling Ambient Light (Halloween Edition)">
  
 </details>
 
