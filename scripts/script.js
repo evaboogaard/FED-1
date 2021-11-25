@@ -143,12 +143,12 @@ function whatGoesPlay() {
 
     if (whatGoesBlue.classList.contains("playsingle")) {
         whatGoesAudioPlay();
-        whatGoesPlayButton.src = "images/pause.png";
-        lookAtPlayButton.src = "images/play.png";
-        numbersUpPlayButton.src = "images/play.png";
+        whatGoesPlayButton.src = "../images/pause.png";
+        lookAtPlayButton.src = "../images/play.png";
+        numbersUpPlayButton.src = "../images/play.png";
     } else {
         stopWhatGoesAudioPlay();
-        whatGoesPlayButton.src = "images/play.png";
+        whatGoesPlayButton.src = "../images/play.png";
     }
 
     stopLookAtAudioPlay();
