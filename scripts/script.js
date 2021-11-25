@@ -7,7 +7,7 @@ var lookAtText = document.querySelector(".home section:first-of-type ul li:first
 var lookAtPlayButton = document.querySelector(".home section:first-of-type ul li:first-of-type img:first-of-type")
 var lookAtPlayText = document.querySelector(".home section:first-of-type ul li:first-of-type p:nth-of-type(2)")
 
-var lookAtAudio = new Audio("../audio/lookAtMe.mp3");
+var lookAtAudio = new Audio("../audio/lookatme.mp3");
 
 // Retrieving Look At Me Elements
 var numbersUpNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:first-of-type");
@@ -16,7 +16,7 @@ var numbersUpText = document.querySelector(".home section:first-of-type ul li:nt
 var numbersUpPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) img:first-of-type")
 var numbersUpPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:nth-of-type(2)")
 
-var numbersUpAudio = new Audio("../audio/numbersUp.mp3");
+var numbersUpAudio = new Audio("../audio/numbersup.mp3");
 
 // Retrieving Look At Me Elements
 var whatGoesNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:first-of-type");
@@ -25,7 +25,7 @@ var whatGoesText = document.querySelector(".home section:first-of-type ul li:nth
 var whatGoesPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) img:first-of-type")
 var whatGoesPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:nth-of-type(2)")
 
-var whatGoesAudio = new Audio("../audio/whatGoesLetGo.mp3");
+var whatGoesAudio = new Audio("../audio/whatgoesletgo.mp3");
 
 // Caroussel Shit
 var carousselElement = document.querySelector(".home section:nth-of-type(2) img");
