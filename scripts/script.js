@@ -1,5 +1,3 @@
-console.log("kk lauwe shit");
-
 // Retrieving Look At Me Elements
 var lookAtNew = document.querySelector(".home section:first-of-type ul li:first-of-type p:first-of-type");
 var lookAtRed = document.querySelector(".home section:first-of-type ul li:first-of-type");
