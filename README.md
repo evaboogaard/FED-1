@@ -68,6 +68,8 @@ Detailpage
 ### Stand van zaken
 Het ging best wel goed, ik had moeite met javascript & beetje met height en width, maar ben er wel uitgekomen.
 <img src="images/procesverslag/screenshot1.png" width="210px" alt="breakdown van de hele pagina">
+<img src="images/procesverslag/screenshot2.png" width="210px" alt="breakdown van de hele pagina">
+<img src="images/procesverslag/screenshot3.png" width="210px" alt="breakdown van de hele pagina">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
