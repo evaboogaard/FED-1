@@ -15,32 +15,47 @@
 <body>
 
 	<header>
+		<a href="#"></a>
+		<!-- <h1>
+			<a href="http://stackoverflow.com">
+				<img src="images/logo-horizontal.svg" alt="De Staat" />
+			</a>
+		</h1> -->
 		<nav>
-			<h1>
-				<a href="http://stackoverflow.com">
-					<img src="images/logo-horizontal.svg" alt="De Staat" />
-				</a>
-			</h1>
+			<ul>
+				<li><a class="active">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Shows</a></li>
+				<li><a href="#">Shop</a></li>
+			</ul>
 		</nav>
 
+		<form role="search" action="#">
+			<input type="search" name="search" id="search" placeholder="eg. Tour Dates, Instagram..." autocomplete="off"
+				aria-label="zoeken">
+			<button type="submit">Search</button>
+		</form>
+	</header>
+
+	<main class="home">
 		<!-- new singles -->
 		<section>
 			<ul>
-				<li>
+				<li class="normalheight">
 					<h2>Look At Me</h2>
 					<p>New</p>
 					<img src="images/play.png" alt="Play Button Look At Me">
 					<p>Play</p>
 					<img src="images/bell.png" alt="Notification Bell Look At Me">
 				</li>
-				<li>
+				<li class="normalheight">
 					<h2>Numbers Up</h2>
 					<p>New</p>
 					<img src="images/play.png" alt="Play Button LNumbers Up">
 					<p>Play</p>
 					<img src="images/bell.png" alt="Notification Bell Numbers Up">
 				</li>
-				<li>
+				<li class="normalheight">
 					<h2>What Goes, Let Go</h2>
 					<p>New</p>
 					<img src="images/play.png" alt="Play Button What Goes, Let Go">
@@ -49,45 +64,38 @@
 				</li>
 			</ul>
 		</section>
-	</header>
-
-	<main>
 
 		<!-- pictures in header -->
 		<section>
 			<img src="images/eventheader1.jpeg" alt="February Tour 2022">
-			<button></button>
-			<button></button>
-			<a href="">
+			<img src="images/eventheader2.png" alt="">
+			<img src="images/eventheader3.jpeg" alt="">
+			<!-- <a href="">
 				<p>Feburary 2022: ON SALE NOW</p>
-			</a>
+			</a> -->
 		</section>
 
 		<!-- videos -->
 		<section>
-			<h2>Watch us play</h2>
+			<h3>Watch us play</h3>
 			<ul>
 				<li>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/T0Sg-NxEa6M"
-						title="YouTube video player" frameborder="0"
+					<iframe src="https://www.youtube.com/embed/T0Sg-NxEa6M" title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</li>
 				<li>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/zoE9awFVYxk"
-						title="YouTube video player" frameborder="0"
+					<iframe src="https://www.youtube.com/embed/zoE9awFVYxk" title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</li>
 				<li>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/0ttGgIQpAUc"
-						title="YouTube video player" frameborder="0"
+					<iframe src="https://www.youtube.com/embed/W2EalVGTDbw" title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</li>
 				<li>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/MWM9DC-31Xo"
-						title="YouTube video player" frameborder="0"
+					<iframe src="https://www.youtube.com/embed/MWM9DC-31Xo" title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</li>
@@ -99,26 +107,24 @@
 
 		<!-- shop items -->
 		<section>
-			<h2>Order Now</h2>
+			<h3>Order Now</h3>
 			<ul>
 				<li>
-					<a href=""><img src="" alt="">
-						<p>BUBBLE GUM CD</p>
+					<a href=""><img src="images/shop1.jpeg" alt="Bubble Gum Album Cover">
 					</a>
 				</li>
 				<li>
-					<a href=""><img src="" alt="">
-						<p>BUBBLE GUM 2LP</p>
+					<a href=""><img src="images/shop2.jpeg" alt="Bubble Gum LP">
 					</a>
 				</li>
 				<li>
-					<a href=""><img src="" alt="">
-						<p>BUBBLE GUM SHIRT</p>
+					<a href=""><img src="images/shop3.jpeg" alt="Bubble Gum T-Shirt Black & White">
+						<p>NEW</p>
 					</a>
 				</li>
 				<li>
-					<a href=""><img src="" alt="">
-						<p>RED YELLOW BLUE PACKAGE</p>
+					<a href=""><img src="images/shop4.jpeg" alt="Red Yellow Blue T-Shirt & Postcard Package">
+						<p>WEB ONLY</p>
 					</a>
 				</li>
 			</ul>
@@ -129,9 +135,11 @@
 
 		<!-- twitter timeline -->
 		<section>
-			<h2>Tweet Tweet</h2>
-			<a class="twitter-timeline" href="https://twitter.com/destaat?ref_src=twsrc%5Etfw">Tweets by destaat</a>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<h3>Tweet Tweet</h3>
+			<div class="twitter">
+				<a class="twitter-timeline" href="https://twitter.com/destaat?ref_src=twsrc%5Etfw">Tweets by destaat</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
 			<a href="">
 				<p>Read all about it</p>
 			</a>
@@ -139,25 +147,26 @@
 
 		<!-- newsletter form -->
 		<section>
-			<h2>Newsletter</h2>
+			<h3>Newsletter</h3>
 			<p>Sign up for news, updates & exclusives!</p>
 			<form action="submit">
-				<label for="fname"></label>
+				<label for="fname">First Name</label>
 				<input type="text" name="fname">
-				<label for="lname"></label>
+				<label for="lname">Last Name</label>
 				<input type="text" name="lname">
-				<label for="email"></label>
+				<label for="email">E-Mail</label>
 				<input type="text" name="email">
-				<input type="submit">
+				<button type="submit">Subscribe</button>
 			</form>
 		</section>
 
 		<!-- tour dates -->
 		<section>
-			<h2>Shows</h2>
+			<h3>Shows</h3>
 			<ul>
 				<li>
-					<h3>The Garage, London</h3>
+					<img src="images/ukflag.png" alt="United Kingdom Flag">
+					<h4>The Garage, London</h4>
 					<p>EU Clubtour</p>
 					<a href="">
 						<p>Website</p>
@@ -169,7 +178,8 @@
 				</li>
 
 				<li>
-					<h3>Nouveau Casino, Paris</h3>
+					<img src="images/franceflag.png" alt="France Flag">
+					<h4>Nouveau Casino, Paris</h4>
 					<p>EU Clubtour</p>
 					<a href="">
 						<p>Website</p>
@@ -181,7 +191,8 @@
 				</li>
 
 				<li>
-					<h3>Plaza, Zürich</h3>
+					<img src="images/switzerlandflag.png" alt="Switzerland Flag">
+					<h4>Plaza, Zürich</h4>
 					<p>EU Clubtour</p>
 					<a href="">
 						<p>Website</p>
@@ -193,7 +204,8 @@
 				</li>
 
 				<li>
-					<h3>Strom, München</h3>
+					<img src="images/germanyflag.png" alt="Germany Flag">
+					<h4>Strom, München</h4>
 					<p>EU Clubtour</p>
 					<a href="">
 						<p>Website</p>
@@ -205,7 +217,8 @@
 				</li>
 
 				<li>
-					<h3>Hole 44, Berlin</h3>
+					<img src="images/germanyflag.png" alt="Germany Flag">
+					<h4>Hole 44, Berlin</h4>
 					<p>EU Clubtour</p>
 					<a href="">
 						<p>Website</p>
@@ -217,7 +230,8 @@
 				</li>
 
 				<li>
-					<h3>Doornroosje, Nijmegen</h3>
+					<img src="images/dutchflag.png" alt="The Netherlands Flag">
+					<h4>Doornroosje, Nijmegen</h4>
 					<p>EU Clubtour</p>
 					<a href="">
 						<p>Website</p>
@@ -232,14 +246,14 @@
 	</main>
 
 	<footer>
-		<h2>Contact</h2>
+		<h3>Contact</h3>
 		<ul>
 			<li>
 				<h4>Agent worldwide (bookings)</h4>
 				<p>
-					K2 Agency Limited
-					Yerry Stetter
-					yerrystetter@k2ours.com
+					K2 Agency Limited <br>
+					Yerry Stetter <br>
+					yerrystetter@k2ours.com <br>
 					+44 (0)2077 364 948
 				</p>
 			</li>
@@ -247,9 +261,9 @@
 			<li>
 				<h4>Bookings NL</h4>
 				<p>
-					Mojo Concerts
-					Bertus de Blaauw
-					b.de.blaauw@mojo.nl
+					Mojo Concerts <br>
+					Bertus de Blaauw <br>
+					b.de.blaauw@mojo.nl <br>
 					+31 (0)15 2 121 980
 				</p>
 			</li>
@@ -257,8 +271,8 @@
 			<li>
 				<h4>Label/PR Benelux</h4>
 				<p>
-					Virgin Music Benelux
-					Atif.Jadelkarim@virginmusic.com
+					Virgin Music Benelux <br>
+					Atif.Jadelkarim@virginmusic.com <br>
 					+31 (0)20 6 380 313
 				</p>
 			</li>
@@ -266,9 +280,9 @@
 			<li>
 				<h4>Label/PR Europe/Latin-America</h4>
 				<p>
-					Virgin Music
-					Amy Teng-Collier
-					Amy.TengCollier@virginmusic.com
+					Virgin Music <br>
+					Amy Teng-Collier <br>
+					Amy.TengCollier@virginmusic.com <br>
 					+44 (0)2039327133
 				</p>
 			</li>
@@ -276,9 +290,9 @@
 			<li>
 				<h4>Management</h4>
 				<p>
-					LaLaLa Management
-					Arjo Klingens
-					mngmntdestaat@lalalamanagement.nl
+					LaLaLa Management <br>
+					Arjo Klingens <br>
+					mngmntdestaat@lalalamanagement.nl <br>
 					+31 (0)10 2 600 135
 				</p>
 			</li>
@@ -286,8 +300,8 @@
 			<li>
 				<h4>Merchandise/webshop</h4>
 				<p>
-					WeHaveMerch
-					info@wehavemerch.net
+					WeHaveMerch <br>
+					info@wehavemerch.net <br>
 					+31 (0)10 2 600 135
 				</p>
 			</li>

@@ -4,6 +4,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
+(gebiedende wijs is zonder 't' joh)
+
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
 
@@ -33,15 +35,15 @@ Surface Plane
 ## Je website
 
 ### Je opdracht:
-https://www.smokonow.com/
+https://www.destaat.net/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepage 
-<img src="images/procesverslag/destaat1.png" width="375px" alt="Smoko Home Page">
+<img src="images/procesverslag/destaat1.png" width="375px" alt="">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Detailpage
-<img src="images/procesverslag/destaat2.png" width="375px" alt="Lil B Dumpling Ambient Light (Halloween Edition)">
+<img src="images/procesverslag/destaat2.png" width="375px" alt="">
  
 </details>
 
@@ -51,12 +53,6 @@ Detailpage
 
 ### de hele pagina: 
 <img src="images/procesverslag/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
-
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -70,8 +66,8 @@ Detailpage
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Het ging best wel goed, ik had moeite met javascript & beetje met height en width, maar ben er wel uitgekomen.
+<img src="images/procesverslag/screenshot1.png" width="210px" alt="breakdown van de hele pagina">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
