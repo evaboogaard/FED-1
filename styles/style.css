@@ -69,7 +69,7 @@ li {
   list-style: none;
 }
 
-h1 {
+header h1 {
   visibility: hidden;
 }
 
@@ -239,12 +239,12 @@ header form button {
 }
 
 /* Titles of Sections */
-.home section:nth-of-type(2) h3,
-.home section:nth-of-type(3) h3,
-.home section:nth-of-type(4) h3,
-.home section:nth-of-type(5) h3,
-.home section:nth-of-type(6) h3,
-.home section:nth-of-type(7) h3 {
+.home section:nth-of-type(2) h1,
+.home section:nth-of-type(3) h1,
+.home section:nth-of-type(4) h1,
+.home section:nth-of-type(5) h1,
+.home section:nth-of-type(6) h1,
+.home section:nth-of-type(7) h1 {
   position: sticky;
   z-index: 100;
 
@@ -310,20 +310,20 @@ footer {
   padding: 5em 1.2em 2em 1.2em;
 }
 
-footer h3 {
+footer h1 {
   padding-bottom: .6em;
   border-bottom: 3px solid var(--footer-text);
   margin-bottom: 1em;
 }
 
-footer h4,
+footer h2,
 footer p,
-footer h3 {
+footer h1 {
   color: var(--footer-text);
   font-size: 1.5em;
 }
 
-footer h4 {
+footer h2 {
   font-weight: 400;
   font-size: .8em;
   margin-top: 1em;
@@ -428,10 +428,11 @@ footer button {
 }
 
 .home section:first-of-type ul li img,
-.home section:first-of-type ul li h2,
+.home section:first-of-type ul li h1,
 .home section:first-of-type ul li p {
   position: absolute;
 }
+
 
 .home section:first-of-type ul li img {
   width: 4%;
@@ -448,19 +449,19 @@ footer button {
   right: 2%;
 }
 
-.home section:first-of-type ul li h2,
+.home section:first-of-type ul li h1,
 .home section:first-of-type ul li p {
   font-weight: 100;
   font-size: 1.5em;
 }
 
-.home section:first-of-type ul li h2,
+.home section:first-of-type ul li h1,
 .home section:first-of-type ul li p:first-of-type {
   left: 2%;
 }
 
 /* Song title */
-.home section:first-of-type ul li h2 {
+.home section:first-of-type ul li h1 {
   top: 14%;
   transition: .7s ease-in-out;
 }
@@ -560,7 +561,7 @@ footer button {
   }
 
   /* Song title */
-  .home section:first-of-type ul li h2 {
+  .home section:first-of-type ul li h1 {
     margin-top: -1.2em;
   }
 
@@ -1006,7 +1007,7 @@ footer button {
   background-color: var(--shows-color);
 }
 
-.home section:nth-of-type(7) li h4,
+.home section:nth-of-type(7) li h2,
 .home section:nth-of-type(7) li p,
 .home section:nth-of-type(7) li a p,
 .home section:nth-of-type(7) li time {
@@ -1037,7 +1038,7 @@ footer button {
 }
 
 /* Location of show */
-.home section:nth-of-type(7) li h4 {
+.home section:nth-of-type(7) li h2 {
   top: 2.6em;
   left: 7.3em;
 
