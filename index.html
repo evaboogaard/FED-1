@@ -13,17 +13,17 @@
 </head>
 
 <body>
+	<div class="space stars1"></div>
+	<div class="space stars2"></div>
+	<div class="space stars3"></div>
 
 	<header>
-		<a href="#"></a>
-		<!-- <h1>
-			<a href="http://stackoverflow.com">
-				<img src="images/logo-horizontal.svg" alt="De Staat" />
-			</a>
-		</h1> -->
+		<a tabindex="0" href="#">
+			<h1>De Staat</h1>
+		</a>
 		<nav>
 			<ul>
-				<li><a class="active">Home</a></li>
+				<li><a tabindex="0" class="active">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Shows</a></li>
 				<li><a href="#">Shop</a></li>
@@ -42,31 +42,31 @@
 		<section>
 			<ul>
 				<li class="normalheight">
-					<h2>Look At Me</h2>
+					<h2 tabindex="0">Look At Me</h2>
 					<p>New</p>
 					<img src="images/play.png" alt="Play Button Look At Me">
-					<p>Play</p>
+					<p tabindex="0">Play</p>
 					<img src="images/bell.png" alt="Notification Bell Look At Me">
 				</li>
 				<li class="normalheight">
-					<h2>Numbers Up</h2>
+					<h2 tabindex="0">Numbers Up</h2>
 					<p>New</p>
 					<img src="images/play.png" alt="Play Button LNumbers Up">
-					<p>Play</p>
+					<p tabindex="0">Play</p>
 					<img src="images/bell.png" alt="Notification Bell Numbers Up">
 				</li>
 				<li class="normalheight">
-					<h2>What Goes, Let Go</h2>
+					<h2 tabindex="0">What Goes, Let Go</h2>
 					<p>New</p>
 					<img src="images/play.png" alt="Play Button What Goes, Let Go">
-					<p>Play</p>
+					<p tabindex="0">Play</p>
 					<img src="images/bell.png" alt="Notification Bell What Goes, Let Go">
 				</li>
 			</ul>
 		</section>
 
 		<!-- pictures in header -->
-		<section>
+		<section class="animate">
 			<img src="images/eventheader1.jpeg" alt="February Tour 2022">
 			<img src="images/eventheader2.png" alt="">
 			<img src="images/eventheader3.jpeg" alt="">
@@ -76,26 +76,26 @@
 		</section>
 
 		<!-- videos -->
-		<section>
-			<h3>Watch us play</h3>
+		<section class="animate">
+			<h3 tabindex="0">Watch us play</h3>	
 			<ul>
 				<li>
-					<iframe src="https://www.youtube.com/embed/T0Sg-NxEa6M" title="YouTube video player"
+					<iframe class="animate" tabindex="-1" src="https://www.youtube.com/embed/T0Sg-NxEa6M" title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</li>
 				<li>
-					<iframe src="https://www.youtube.com/embed/zoE9awFVYxk" title="YouTube video player"
+					<iframe class="animate" tabindex="-1" src="https://www.youtube.com/embed/zoE9awFVYxk" title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</li>
 				<li>
-					<iframe src="https://www.youtube.com/embed/W2EalVGTDbw" title="YouTube video player"
+					<iframe class="animate" tabindex="-1" src="https://www.youtube.com/embed/W2EalVGTDbw" title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</li>
 				<li>
-					<iframe src="https://www.youtube.com/embed/MWM9DC-31Xo" title="YouTube video player"
+					<iframe class="animate" tabindex="-1" src="https://www.youtube.com/embed/MWM9DC-31Xo" title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</li>
@@ -106,48 +106,62 @@
 		</section>
 
 		<!-- shop items -->
-		<section>
-			<h3>Order Now</h3>
+		<section class="animate">
+			<h3 tabindex="0">Order Now</h3>
 			<ul>
-				<li>
-					<a href=""><img src="images/shop1.jpeg" alt="Bubble Gum Album Cover">
+				<li class="animate">
+					<a tabindex="-1" href=""><img src="images/shop1.jpeg" alt="Bubble Gum Album Cover">
+						<p tabindex="0">Bubble Gum CD <br>
+							€16.95</p>
+							<p>Kopen</p>
 					</a>
 				</li>
-				<li>
-					<a href=""><img src="images/shop2.jpeg" alt="Bubble Gum LP">
+				<li class="animate">
+					<a tabindex="-1" href=""><img src="images/shop2.jpeg" alt="Bubble Gum LP">
+						<p tabindex="0">Bubble Gum 2LP <br>
+							€28.95</p>
+							<p>Kopen</p>
 					</a>
 				</li>
-				<li>
-					<a href=""><img src="images/shop3.jpeg" alt="Bubble Gum T-Shirt Black & White">
+				<li class="animate">
+					<a tabindex="-1" href=""><img src="images/shop3.jpeg" alt="Bubble Gum T-Shirt Black & White">
 						<p>NEW</p>
+						<p tabindex="0">Bubble Gum T-Shirt B&W <br>
+							€22.00</p>
+							<p>Kopen</p>
 					</a>
 				</li>
-				<li>
-					<a href=""><img src="images/shop4.jpeg" alt="Red Yellow Blue T-Shirt & Postcard Package">
+				<li class="animate">
+					<a tabindex="-1" href=""><img src="images/shop4.jpeg" alt="Red Yellow Blue T-Shirt & Postcard Package">
 						<p>WEB ONLY</p>
+						<p tabindex="0">Red Yellow Blue Package <br>
+							€16.95</p>
+							<p>Kopen</p>
 					</a>
 				</li>
 			</ul>
-			<a href="">
+			<a tabindex="-1" href="">
 				<p>Shop till you drop</p>
 			</a>
 		</section>
 
 		<!-- twitter timeline -->
-		<section>
-			<h3>Tweet Tweet</h3>
+		<section class="animate">
+			<h3 tabindex="0">Tweet Tweet</h3>
+
+			<a href="#skiptwitter">Skip Twitter Timeline</a>
 			<div class="twitter">
 				<a class="twitter-timeline" href="https://twitter.com/destaat?ref_src=twsrc%5Etfw">Tweets by destaat</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
-			<a href="">
+			<a id="skiptwitter" href="">
 				<p>Read all about it</p>
 			</a>
 		</section>
 
 		<!-- newsletter form -->
-		<section>
-			<h3>Newsletter</h3>
+		<section class="animate">
+			<h3 tabindex="0">Newsletter</h3>
 			<p>Sign up for news, updates & exclusives!</p>
 			<form action="submit">
 				<label for="fname">First Name</label>
@@ -161,95 +175,95 @@
 		</section>
 
 		<!-- tour dates -->
-		<section>
-			<h3>Shows</h3>
+		<section class="animate">
+			<h3 tabindex="0">Shows</h3>
 			<ul>
 				<li>
 					<img src="images/ukflag.png" alt="United Kingdom Flag">
-					<h4>The Garage, London</h4>
+					<h4 tabindex="0">The Garage, London</h4>
+					<time tabindex="0" datetime="2022-02-16">WED 16 FEB</time>
 					<p>EU Clubtour</p>
-					<a href="">
-						<p>Website</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Website</p>
 					</a>
-					<a href="">
-						<p>Tickets</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Tickets</p>
 					</a>
-					<time datetime="2022-02-16">WED 16 FEB</time>
 				</li>
 
 				<li>
 					<img src="images/franceflag.png" alt="France Flag">
-					<h4>Nouveau Casino, Paris</h4>
+					<h4 tabindex="0">Nouveau Casino, Paris</h4>
+					<time tabindex="0" datetime="2022-02-17">THU 17 FEB</time>
 					<p>EU Clubtour</p>
-					<a href="">
-						<p>Website</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Website</p>
 					</a>
-					<a href="">
-						<p>Tickets</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Tickets</p>
 					</a>
-					<time datetime="2022-02-17">THU 17 FEB</time>
 				</li>
 
 				<li>
 					<img src="images/switzerlandflag.png" alt="Switzerland Flag">
-					<h4>Plaza, Zürich</h4>
+					<h4 tabindex="0">Plaza, Zürich</h4>
+					<time tabindex="0" datetime="2022-02-18">FRI 18 FEB</time>
 					<p>EU Clubtour</p>
-					<a href="">
-						<p>Website</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Website</p>
 					</a>
-					<a href="">
-						<p>Tickets</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Tickets</p>
 					</a>
-					<time datetime="2022-02-18">FRI 18 FEB</time>
 				</li>
 
 				<li>
 					<img src="images/germanyflag.png" alt="Germany Flag">
-					<h4>Strom, München</h4>
+					<h4 tabindex="0">Strom, München</h4>
+					<time tabindex="0" datetime="2022-02-17">SAT 19 FEB</time>
 					<p>EU Clubtour</p>
-					<a href="">
-						<p>Website</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Website</p>
 					</a>
-					<a href="">
-						<p>Tickets</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Tickets</p>
 					</a>
-					<time datetime="2022-02-17">SAT 19 FEB</time>
 				</li>
 
 				<li>
 					<img src="images/germanyflag.png" alt="Germany Flag">
-					<h4>Hole 44, Berlin</h4>
+					<h4 tabindex="0">Hole 44, Berlin</h4>
+					<time tabindex="0" datetime="2022-02-22">TUE 22 FEB</time>
 					<p>EU Clubtour</p>
-					<a href="">
-						<p>Website</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Website</p>
 					</a>
-					<a href="">
-						<p>Tickets</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Tickets</p>
 					</a>
-					<time datetime="2022-02-22">TUE 22 FEB</time>
 				</li>
 
 				<li>
 					<img src="images/dutchflag.png" alt="The Netherlands Flag">
-					<h4>Doornroosje, Nijmegen</h4>
+					<h4 tabindex="0">Doornroosje, Nijmegen</h4>
+					<time tabindex="0" datetime="2022-02-24">THU 24 FEB</time>
 					<p>EU Clubtour</p>
-					<a href="">
-						<p>Website</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Website</p>
 					</a>
-					<a href="">
-						<p>Tickets</p>
+					<a tabindex="-1" href="">
+						<p tabindex="0">Tickets</p>
 					</a>
-					<time datetime="2022-02-24">THU 24 FEB</time>
 				</li>
 			</ul>
 		</section>
 	</main>
 
 	<footer>
-		<h3>Contact</h3>
+		<h3 tabindex="0">Contact</h3>
 		<ul>
 			<li>
-				<h4>Agent worldwide (bookings)</h4>
+				<h4 tabindex="0">Agent worldwide (bookings)</h4>
 				<p>
 					K2 Agency Limited <br>
 					Yerry Stetter <br>
@@ -259,7 +273,7 @@
 			</li>
 
 			<li>
-				<h4>Bookings NL</h4>
+				<h4 tabindex="0">Bookings NL</h4>
 				<p>
 					Mojo Concerts <br>
 					Bertus de Blaauw <br>
@@ -269,7 +283,7 @@
 			</li>
 
 			<li>
-				<h4>Label/PR Benelux</h4>
+				<h4 tabindex="0">Label/PR Benelux</h4>
 				<p>
 					Virgin Music Benelux <br>
 					Atif.Jadelkarim@virginmusic.com <br>
@@ -278,7 +292,7 @@
 			</li>
 
 			<li>
-				<h4>Label/PR Europe/Latin-America</h4>
+				<h4 tabindex="0">Label/PR Europe/Latin-America</h4>
 				<p>
 					Virgin Music <br>
 					Amy Teng-Collier <br>
@@ -288,7 +302,7 @@
 			</li>
 
 			<li>
-				<h4>Management</h4>
+				<h4 tabindex="0">Management</h4>
 				<p>
 					LaLaLa Management <br>
 					Arjo Klingens <br>
@@ -298,7 +312,7 @@
 			</li>
 
 			<li>
-				<h4>Merchandise/webshop</h4>
+				<h4 tabindex="0">Merchandise/webshop</h4>
 				<p>
 					WeHaveMerch <br>
 					info@wehavemerch.net <br>
@@ -309,6 +323,8 @@
 
 		<p>De Staat is being supported by Ministerie van Onderwijs, Cultuur en Wetenschap.
 		</p>
+
+		<button></button>
 	</footer>
 
 	<script src="scripts/script.js"></script>

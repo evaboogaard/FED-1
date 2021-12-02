@@ -1,34 +1,68 @@
-// Retrieving Look At Me Elements
-var lookAtNew = document.querySelector(".home section:first-of-type ul li:first-of-type p:first-of-type");
-var lookAtRed = document.querySelector(".home section:first-of-type ul li:first-of-type");
-var lookAtText = document.querySelector(".home section:first-of-type ul li:first-of-type h2");
-var lookAtPlayButton = document.querySelector(".home section:first-of-type ul li:first-of-type img:first-of-type")
-var lookAtPlayText = document.querySelector(".home section:first-of-type ul li:first-of-type p:nth-of-type(2)")
+// Ophalen van alle elementen van Look At Me
+const lookAtNew = document.querySelector(".home section:first-of-type ul li:first-of-type p:first-of-type");
+const lookAtRed = document.querySelector(".home section:first-of-type ul li:first-of-type");
+const lookAtText = document.querySelector(".home section:first-of-type ul li:first-of-type h2");
+const lookAtPlayButton = document.querySelector(".home section:first-of-type ul li:first-of-type img:first-of-type")
+const lookAtPlayText = document.querySelector(".home section:first-of-type ul li:first-of-type p:nth-of-type(2)")
 
-var lookAtAudio = new Audio("audio/lookatme.mp3");
+const lookAtAudio = new Audio("audio/lookatme.mp3");
 
-// Retrieving Look At Me Elements
-var numbersUpNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:first-of-type");
-var numbersUpYellow = document.querySelector(".home section:first-of-type ul li:nth-of-type(2)");
-var numbersUpText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) h2");
-var numbersUpPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) img:first-of-type")
-var numbersUpPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:nth-of-type(2)")
+// Ophalen van alle elementen van Numbers Up
+const numbersUpNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:first-of-type");
+const numbersUpYellow = document.querySelector(".home section:first-of-type ul li:nth-of-type(2)");
+const numbersUpText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) h2");
+const numbersUpPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) img:first-of-type")
+const numbersUpPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:nth-of-type(2)")
 
-var numbersUpAudio = new Audio("audio/numbersup.mp3");
+const numbersUpAudio = new Audio("audio/numbersup.mp3");
 
-// Retrieving Look At Me Elements
-var whatGoesNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:first-of-type");
-var whatGoesBlue = document.querySelector(".home section:first-of-type ul li:nth-of-type(3)");
-var whatGoesText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) h2");
-var whatGoesPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) img:first-of-type")
-var whatGoesPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:nth-of-type(2)")
+// Ophalen van alle elementen van What Goes, Let Go
+const whatGoesNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:first-of-type");
+const whatGoesBlue = document.querySelector(".home section:first-of-type ul li:nth-of-type(3)");
+const whatGoesText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) h2");
+const whatGoesPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) img:first-of-type")
+const whatGoesPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:nth-of-type(2)")
 
-var whatGoesAudio = new Audio("audio/whatgoesletgo.mp3");
+const whatGoesAudio = new Audio("audio/whatgoesletgo.mp3");
 
-// Caroussel Shit
-var carousselElement = document.querySelector(".home section:nth-of-type(2) img");
-var leftArrowElement = document.querySelector(".home section:nth-of-type(2) button:first-of-type");
-var rightArrowElement = document.querySelector(".home section:nth-of-type(2) button:nth-of-type(2)");
+
+// Credit van deze code gaat naar je boy Sam Slotemaker TM (slimmer dan ik)
+
+// Ophalen van alle elementen met de class animate
+const allSections = document.querySelectorAll(".animate");
+
+// De Requirements om de class er uiteindelijk op te laten zetten:
+// rootMargin -> vanaf 20px gaat JS checken
+// treshold -> de hoeveelheid van het item dat in beeld moet zijn om getriggerd te worden
+const options = {
+    rootMargin: "20px",
+    treshold: 0.5
+}
+
+// callback functie wordt uitgevoerd wanneer het element in of uit beeld gaat
+function callbackFunction(entries) {
+    // over alle elementen heenlopen
+    entries.forEach(entry => {
+        // checken of het element in beeld is
+        if (entry.intersectionRatio > 0){
+            // class toevoegen zodra deze in beeld is
+            entry.target.classList.add("fade");
+        }
+    })
+}
+
+const observer = new IntersectionObserver(callbackFunction, options);
+
+// over alle elementen heenlopen
+allSections.forEach(item => {
+    // het element observeren
+    observer.observe(item);
+})
+
+
+
+
+
 
 // Look At Me
 function lookAtAudioPlay() {
@@ -43,16 +77,16 @@ function stopLookAtAudioPlay() {
 function lookAtMePlay() {
     lookAtNew.classList.toggle("hide");
     lookAtRed.classList.toggle("playsingle");
-    lookAtText.classList.toggle("goingUp");
+    lookAtText.classList.toggle("goingup");
     lookAtPlayText.classList.toggle("hide");
 
     numbersUpNew.classList.remove("hide");
     numbersUpYellow.classList.remove("playsingle");
-    numbersUpText.classList.remove("goingUp");
+    numbersUpText.classList.remove("goingup");
     numbersUpPlayText.classList.remove("hide");
     whatGoesNew.classList.remove("hide");
     whatGoesBlue.classList.remove("playsingle");
-    whatGoesText.classList.remove("goingUp");
+    whatGoesText.classList.remove("goingup");
     whatGoesPlayText.classList.remove("hide");
 
 
@@ -85,17 +119,17 @@ function stopNumbersUpAudioPlay() {
 function numbersUpPlay() {
     numbersUpNew.classList.toggle("hide");
     numbersUpYellow.classList.toggle("playsingle");
-    numbersUpText.classList.toggle("goingUp");
+    numbersUpText.classList.toggle("goingup");
     numbersUpPlayText.classList.toggle("hide");
 
 
     whatGoesNew.classList.remove("hide");
     whatGoesBlue.classList.remove("playsingle");
-    whatGoesText.classList.remove("goingUp");
+    whatGoesText.classList.remove("goingup");
     whatGoesPlayText.classList.remove("hide");
     lookAtNew.classList.remove("hide");
     lookAtRed.classList.remove("playsingle");
-    lookAtText.classList.remove("goingUp");
+    lookAtText.classList.remove("goingup");
     lookAtPlayText.classList.remove("hide");
 
     if (numbersUpYellow.classList.contains("playsingle")) {
@@ -127,12 +161,12 @@ function stopWhatGoesAudioPlay() {
 function whatGoesPlay() {
     whatGoesNew.classList.toggle("hide");
     whatGoesBlue.classList.toggle("playsingle");
-    whatGoesText.classList.toggle("goingUp");
+    whatGoesText.classList.toggle("goingup");
     whatGoesPlayText.classList.toggle("hide");
 
     numbersUpNew.classList.remove("hide");
     numbersUpYellow.classList.remove("playsingle");
-    numbersUpText.classList.remove("goingUp");
+    numbersUpText.classList.remove("goingup");
     numbersUpPlayText.classList.remove("hide");
     lookAtNew.classList.remove("hide");
     lookAtRed.classList.remove("playsingle");
@@ -154,3 +188,4 @@ function whatGoesPlay() {
 }
 
 whatGoesBlue.addEventListener("click", whatGoesPlay);
+

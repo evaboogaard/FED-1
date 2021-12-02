@@ -74,11 +74,11 @@ Het ging best wel goed, ik had moeite met javascript & beetje met height en widt
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Heba           | Eva                | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| nav met javascr| javascript doet    | breakdown    | en dan ik dat    |
+| en dat ook nog | het niet op github | schetsbestand| dit wil ik zeker |
+| ...            |                    | te groot     | ...              |
 
 
 ### Verslag van meeting
@@ -101,7 +101,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb gestruggled met het stuk aan het begin, met de 3 singles, deze heb ik eerst van flexbox naar grid omgezet maar toen toch weer niet, ik kwam er later pas achter dat als je met JS een class toevoegt, deze pas de vorige waarde overschrijft als je een net zo specifieke selector aanroept. Maar met bloed, zweet en tranen ben ik er wel uitgekomen. 
+
+Ik heb gespeeld met media queries, ik ben begonnen met het responsive maken van een aantal elementen en ik heb een dark-mode toegevoegd. Ook heb ik geprobeerd een beginnetje te maken met de toegankelijkheid van de website, maar daar valt nog veel te halen.
+
+<img src="images/procesverslag/week3_1.png" width="210px" alt="breakdown van de hele pagina">
+<img src="images/procesverslag/week3_2.png" width="210px" alt="breakdown van de hele pagina">
+<img src="images/procesverslag/week3_3.png" width="210px" alt="breakdown van de hele pagina">
 
 
 ### Agenda voor meeting
