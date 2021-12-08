@@ -1448,6 +1448,27 @@ time:focus {
   top: 65%;
 }
 
+@media (min-width: 39em) {
+  .shop section:nth-of-type(2) a:nth-of-type(7) h2,
+  .shop section:nth-of-type(2) a:nth-of-type(8) h2 {
+    top: 70%;
+  }
+}
+
+@media (min-width: 43em) {
+  .shop section:nth-of-type(2) a:nth-of-type(7) h2,
+  .shop section:nth-of-type(2) a:nth-of-type(8) h2 {
+    top: 75%;
+  }
+}
+
+@media (min-width: 45em) {
+  .shop section:nth-of-type(2) a:nth-of-type(7) h2,
+  .shop section:nth-of-type(2) a:nth-of-type(8) h2 {
+    top: 65%;
+  }
+}
+
 @media (min-width: 70em) {
 
   .shop section:nth-of-type(2) a:nth-of-type(7) h2,
