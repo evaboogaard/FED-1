@@ -170,7 +170,7 @@ Dus ik heb maar heel snel al mijn tabindex-jes uit de html geknald, want die heb
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
@@ -178,22 +178,14 @@ Eerlijk, ik ben gewoon aan het chillen. No stress. Only vibes. <3
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Heba -> vraag over tabben en a tags
+Maily -> vraag over responsiveness
+Eva -> hoe uitgebreid moet alt tekst zijn? En hoe groot/klein moet een scherm kunnen zijn?
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Alt tekst weglaten behalve als de image een link is -> anders wordt de link niet duidelijk voorgelezen.
+240px zou keihard zijn maar 320px is een gangbaar formaat. Grote schermen zijn lastig. Maar niet persé fout te doen, volgens mij.
 
 </details>
 
@@ -203,11 +195,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben sip dat het voorbij is en ik wou dat ik opnieuw kon beginnen met de kennis die ik nu heb, maar ik ben uiteindelijk best tevreden.
 
 ### Screenshot(s)
 
@@ -224,9 +216,9 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
 1. One source to rule them all: https://www.vasilis.nl/
+
+
 2. https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column?retiredLocale=nl
 3. https://newbedev.com/show-hide-elements-with-animation
 4. https://www.digitalocean.com/community/tutorials/code-formatting-with-prettier-in-visual-studio-code
@@ -234,6 +226,11 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 6. https://stackoverflow.com/questions/2943548/how-to-reset-remove-chromes-input-highlighting-focus-border
 7. https://www.smokonow.com/
 8. https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness
-
+9. https://stackoverflow.com/questions/45926475/naming-html-section-ids
+10. https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+11. https://stackoverflow.com/questions/45536537/centering-in-css-grid
+12. https://dlo.mijnhva.nl/d2l/le/content/324289/Home
+13. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateZ()
+14. Mijn eigen brein
 
 </details>

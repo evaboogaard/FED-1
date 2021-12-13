@@ -11,8 +11,8 @@ const lookAtAudio = new Audio("audio/lookatme.mp3");
 const numbersUpNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:first-of-type");
 const numbersUpYellow = document.querySelector(".home section:first-of-type ul li:nth-of-type(2)");
 const numbersUpText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) h1");
-const numbersUpPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) img:first-of-type")
-const numbersUpPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:nth-of-type(2)")
+const numbersUpPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) img:first-of-type");
+const numbersUpPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:nth-of-type(2)");
 
 const numbersUpAudio = new Audio("audio/numbersup.mp3");
 
@@ -20,8 +20,8 @@ const numbersUpAudio = new Audio("audio/numbersup.mp3");
 const whatGoesNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:first-of-type");
 const whatGoesBlue = document.querySelector(".home section:first-of-type ul li:nth-of-type(3)");
 const whatGoesText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) h1");
-const whatGoesPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) img:first-of-type")
-const whatGoesPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:nth-of-type(2)")
+const whatGoesPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) img:first-of-type");
+const whatGoesPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:nth-of-type(2)");
 
 const whatGoesAudio = new Audio("audio/whatgoesletgo.mp3");
 
@@ -189,3 +189,10 @@ function whatGoesPlay() {
 
 whatGoesBlue.addEventListener("click", whatGoesPlay);
 
+const clickMePlease = document.querySelector("footer button");
+
+function epicMode(){
+    document.documentElement.classList.toggle('epicmode');
+}
+
+clickMePlease.addEventListener("click", epicMode);
