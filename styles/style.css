@@ -133,6 +133,7 @@ header nav li a:focus {
 
 header>a {
   display: block;
+
   width: 11em;
   height: 3.5em;
   padding: .75em 0 .75em 2.75em;
@@ -307,12 +308,12 @@ header form button:active {
 }
 
 /* Titles of Sections */
-.home section:nth-of-type(2) h1,
-.home section:nth-of-type(3) h1,
-.home section:nth-of-type(4) h1,
-.home section:nth-of-type(5) h1,
-.home section:nth-of-type(6) h1,
-.home section:nth-of-type(7) h1 {
+.home section:nth-of-type(2) h3,
+.home section:nth-of-type(3) h3,
+.home section:nth-of-type(4) h3,
+.home section:nth-of-type(5) h3,
+.home section:nth-of-type(6) h3,
+.home section:nth-of-type(7) h3 {
   position: sticky;
   z-index: 100;
 
@@ -346,6 +347,48 @@ header form button:active {
   color: var(--heading-color);
 
   transition: .4s;
+}
+
+@keyframes rainbow-animation {
+  0% {
+    background-position:left bottom;
+  }
+  100% {
+    background-position:right top;
+  }
+}
+
+:root.epicmode .home section:nth-of-type(3) p,
+:root.epicmode .home section:nth-of-type(4)>a p:last-of-type,
+:root.epicmode .home section:nth-of-type(5) p{
+background-image: linear-gradient(
+  45deg,
+  var(--look-at-me),
+  var(--look-at-me-dark),
+  var(--numbers-up),
+  var(--numbers-up-dark),
+  var(--what-goes-let-go),
+  var(--what-goes-let-go-dark),
+  var(--look-at-me),
+  var(--look-at-me-dark),
+  var(--numbers-up),
+  var(--numbers-up-dark),
+  var(--what-goes-let-go),
+  var(--what-goes-let-go-dark),
+  var(--look-at-me)
+);
+background-size:200% 200%;
+background-position:left bottom;
+
+color: var(--footer-text);
+
+animation: rainbow-animation 2s linear infinite paused;
+}
+
+:root.epicmode .home section:nth-of-type(3) p:hover,
+:root.epicmode .home section:nth-of-type(4)>a p:last-of-type:hover,
+:root.epicmode .home section:nth-of-type(5) p:hover{
+  animation-play-state: running;
 }
 
 @media (max-width: 23em) {
@@ -419,21 +462,21 @@ footer {
   }
 }
 
-footer h1 {
+footer h3 {
   padding-bottom: .6em;
   margin-bottom: 1em;
 
   border-bottom: 3px solid var(--footer-text);
 }
 
-footer h2,
+footer h4,
 footer p,
-footer h1 {
+footer h3 {
   color: var(--footer-text);
   font-size: 1.5em;
 }
 
-footer h2 {
+footer h4 {
   margin-top: 1em;
 
   font-weight: 400;
@@ -605,6 +648,52 @@ footer button:hover {
   }
 }
 
+@media (max-width: 25em){
+  @keyframes epicsingles {
+    0% {
+      transform: translate(0, 0);
+      opacity: 100%;
+    }
+  
+    17.5% {
+      transform: translate(0, 100%);
+    }
+  
+    32.5% {
+      transform: translate(80%, 100%);
+    }
+  
+    67.5% {
+      transform: translate(80%, 0);
+      opacity: 70%;
+    }
+  
+    82.5% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(0, 0) rotate(1turn);
+    }
+  }
+}
+
+@media (min-width: 30em){
+  :root.epicmode .home section:first-of-type ul {
+    left: 10%;
+  }
+}
+
+@media (min-width: 40em){
+  :root.epicmode .home section:first-of-type ul {
+    left: 20%;
+  }
+}
+
+
+
+
+
 
 :root.epicmode .home section:first-of-type ul li:nth-of-type(2) {
   animation-delay: 4s;
@@ -660,7 +749,7 @@ footer button:hover {
 }
 
 .home section:first-of-type ul li img,
-.home section:first-of-type ul li h1,
+.home section:first-of-type ul li h2,
 .home section:first-of-type ul li p {
   position: absolute;
 }
@@ -691,13 +780,13 @@ footer button:hover {
   visibility: hidden;
 }
 
-.home section:first-of-type ul li h1,
+.home section:first-of-type ul li h2,
 .home section:first-of-type ul li p {
   font-weight: 100;
   font-size: 1.5em;
 }
 
-.home section:first-of-type ul li h1,
+.home section:first-of-type ul li h2,
 .home section:first-of-type ul li p:first-of-type {
   left: 2%;
 }
@@ -711,13 +800,13 @@ footer button:hover {
 }
 
 /* Song title */
-.home section:first-of-type ul li h1 {
+.home section:first-of-type ul li h2 {
   top: 14%;
 
   transition: .7s ease-in-out;
 }
 
-:root.epicmode .home section:first-of-type ul li h1 {
+:root.epicmode .home section:first-of-type ul li h2 {
   top: 35%;
   left: 10%;
 
@@ -830,34 +919,6 @@ footer button:hover {
 
   }
 
-  @keyframes epicsingles {
-    0% {
-      transform: translate(0, 0);
-      opacity: 100%;
-    }
-
-    17.5% {
-      transform: translate(0, 14em);
-    }
-
-    32.5% {
-      transform: translate(30em, 14em);
-    }
-
-    67.5% {
-      transform: translate(30em, 0);
-      opacity: 70%;
-    }
-
-    82.5% {
-      transform: translate(0, 0);
-    }
-
-    100% {
-      transform: translate(0, 0) rotate(1turn);
-    }
-  }
-
   .home section:first-of-type ul li.playsingle {
     flex-grow: 3;
 
@@ -872,13 +933,13 @@ footer button:hover {
   }
 
   /* Song title */
-  .home section:first-of-type ul li h1 {
+  .home section:first-of-type ul li h2 {
     margin-top: -1.2em;
 
     font-size: 1.8em;
   }
 
-  :root.epicmode .home section:first-of-type ul li h1 {
+  :root.epicmode .home section:first-of-type ul li h2 {
     margin-top: 0em;
 
     font-size: 1.5em;
@@ -938,7 +999,7 @@ footer button:hover {
   }
 
   /* Song title */
-  .home section:first-of-type ul li h1 {
+  .home section:first-of-type ul li h2 {
     margin-top: -1.2em;
 
     font-size: 2.2em;
@@ -956,34 +1017,6 @@ footer button:hover {
   .home section:first-of-type ul li img:first-of-type,
   .home section:first-of-type ul li img:nth-of-type(2) {
     width: 10%;
-  }
-
-  @keyframes epicsingles {
-    0% {
-      transform: translate(0, 0);
-      opacity: 100%;
-    }
-
-    17.5% {
-      transform: translate(0, 14em);
-    }
-
-    32.5% {
-      transform: translate(40em, 14em);
-    }
-
-    67.5% {
-      transform: translate(40em, 0);
-      opacity: 70%;
-    }
-
-    82.5% {
-      transform: translate(0, 0);
-    }
-
-    100% {
-      transform: translate(0, 0) rotate(1turn);
-    }
   }
 }
 
@@ -1327,7 +1360,7 @@ footer button:hover {
 }
 
 .home section:nth-of-type(5)>a:first-of-type {
-  color: var(--background-color);
+  color: var(--heading-color);
   text-decoration: underline;
 }
 
@@ -1368,7 +1401,6 @@ footer button:hover {
   left: 20%;
   right: 20%;
 
-  color: var(--heading-color);
   text-decoration: double underline;
   text-align: center;
 }
@@ -1509,7 +1541,7 @@ footer button:hover {
   background-color: var(--shows-color);
 }
 
-.home section:nth-of-type(7) li h2,
+.home section:nth-of-type(7) li h4,
 .home section:nth-of-type(7) li p,
 .home section:nth-of-type(7) li a p,
 .home section:nth-of-type(7) li time {
@@ -1540,7 +1572,7 @@ footer button:hover {
 }
 
 /* Location of show */
-.home section:nth-of-type(7) li h2 {
+.home section:nth-of-type(7) li h4 {
   top: 2.6em;
   left: 7.3em;
 
@@ -1581,7 +1613,7 @@ footer button:hover {
 
   background-color: var(--background-color);
 
-  color: var(--form-color);
+  color: var(--footer-text);
   text-align: center;
   font-size: 1.2em;
   word-spacing: 100em;
@@ -2029,6 +2061,10 @@ time:focus {
     background-color: var(--heading-color);
   }
 
+  img{
+    filter: brightness(0.85);
+  }
+
   .space {
     position: fixed;
     z-index: -1;
@@ -2284,7 +2320,7 @@ time:focus {
   z-index: 1000;
 
   width: .3em;
-  height: 500%;
+  height: 1000%;
 
   left: 50%;
   bottom: 0;

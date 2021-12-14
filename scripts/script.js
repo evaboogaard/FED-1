@@ -1,7 +1,7 @@
 // Ophalen van alle elementen van Look At Me
 const lookAtNew = document.querySelector(".home section:first-of-type ul li:first-of-type p:first-of-type");
 const lookAtRed = document.querySelector(".home section:first-of-type ul li:first-of-type");
-const lookAtText = document.querySelector(".home section:first-of-type ul li:first-of-type h1");
+const lookAtText = document.querySelector(".home section:first-of-type ul li:first-of-type h2");
 const lookAtPlayButton = document.querySelector(".home section:first-of-type ul li:first-of-type img:first-of-type")
 const lookAtPlayText = document.querySelector(".home section:first-of-type ul li:first-of-type p:nth-of-type(2)")
 
@@ -10,7 +10,7 @@ const lookAtAudio = new Audio("audio/lookatme.mp3");
 // Ophalen van alle elementen van Numbers Up
 const numbersUpNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:first-of-type");
 const numbersUpYellow = document.querySelector(".home section:first-of-type ul li:nth-of-type(2)");
-const numbersUpText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) h1");
+const numbersUpText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) h2");
 const numbersUpPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) img:first-of-type");
 const numbersUpPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(2) p:nth-of-type(2)");
 
@@ -19,7 +19,7 @@ const numbersUpAudio = new Audio("audio/numbersup.mp3");
 // Ophalen van alle elementen van What Goes, Let Go
 const whatGoesNew = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:first-of-type");
 const whatGoesBlue = document.querySelector(".home section:first-of-type ul li:nth-of-type(3)");
-const whatGoesText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) h1");
+const whatGoesText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) h2");
 const whatGoesPlayButton = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) img:first-of-type");
 const whatGoesPlayText = document.querySelector(".home section:first-of-type ul li:nth-of-type(3) p:nth-of-type(2)");
 

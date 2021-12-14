@@ -1,18 +1,4 @@
-# Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-(gebiedende wijs is zonder 't' joh)
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
-
-## Jij
+## Howdy, FED!
 
 <details>
 <summary>uitwerken voor kick-off werkgroep</summary>
@@ -21,10 +7,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Eva Boogaard
 
 #### Je startniveau:
-Rood
+Rood but trying to be Zwart someday
 
 #### Je focus:
-Surface Plane
+Surface Plane & Responsive
 
 </details>
 
@@ -45,14 +31,12 @@ Homepage
 Detailpage
 <img src="images/procesverslag/destaat2.png" width="375px" alt="">
  
-</details>
-
-
+</details open>
 
 ## Breakdownschets (week 1)
 
 ### de hele pagina: 
-<img src="images/procesverslag/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
+<img src="images/procesverslag/breakdownschets.png" width="375px" alt="">
 
 </details>
 
@@ -67,9 +51,9 @@ Detailpage
 
 ### Stand van zaken
 Het ging best wel goed, ik had moeite met javascript & beetje met height en width, maar ben er wel uitgekomen.
-<img src="images/procesverslag/screenshot1.png" width="210px" alt="breakdown van de hele pagina">
-<img src="images/procesverslag/screenshot2.png" width="210px" alt="breakdown van de hele pagina">
-<img src="images/procesverslag/screenshot3.png" width="210px" alt="breakdown van de hele pagina">
+<img src="images/procesverslag/screenshot1.png" width="210px" alt="">
+<img src="images/procesverslag/screenshot2.png" width="210px" alt="">
+<img src="images/procesverslag/screenshot3.png" width="210px" alt="">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -84,11 +68,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
-
+ik was dom aan het doen en de js file kijkt natuurlijk vanuit de dom, which means dat als je een source gaat aanroepen, je niet ../ moet gebruiken, want dan gaat hij het zoeken in een map die te hoog ligt.
 </details>
 
 
@@ -135,7 +115,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Toegankelijkheidstest (week 4)
 
-<details>
+<details open>
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
@@ -162,6 +142,8 @@ Ik had in eerste instantie gebruik gemaakt van tabindex, omdat ik dacht 'wauwie 
 
 Dus ik heb maar heel snel al mijn tabindex-jes uit de html geknald, want die hebben daar niets te zoeken.
 
+#### Niks werkt zoals het zou moeten werken
+Ik heb in een super coole, mega populaire podcast geleerd dat alle 'best practices' over accessible design eigenlijk nergens op slaan. De tab-key wordt vaak niet gebruikt omdat focus gebroken is - omdat bedrijven er geen tijd, zin, of geld in willen steken. 'Normale' mensen weten niet wat een heading level is - en waarom zouden ze dit ook moeten weten? In conclusie, mijn website is echt niet toegankelijk genoeg, maar wel toegankelijker dan de meesten. Hopelijk mag ik het moment nog meemaken dat er een praktische, universele oplossing komt voor het toegankelijkheidsprobleem binnen het web.
 </details>
 
 
@@ -199,7 +181,7 @@ Alt tekst weglaten behalve als de image een link is -> anders wordt de link niet
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-Ik ben sip dat het voorbij is en ik wou dat ik opnieuw kon beginnen met de kennis die ik nu heb, maar ik ben uiteindelijk best tevreden.
+Ik ben sip dat het voorbij is en ik wou dat ik opnieuw kon beginnen met de kennis die ik nu heb, maar ik ben uiteindelijk heel blij met het resultaat! Het heeft me zo'n 1.4% minder onzeker gemaakt over mijn code-skills dus dat telt als een win in mijn boek.
 
 ### Screenshot(s)
 
@@ -231,6 +213,11 @@ hier screenshot(s) van je eindresultaat
 11. https://stackoverflow.com/questions/45536537/centering-in-css-grid
 12. https://dlo.mijnhva.nl/d2l/le/content/324289/Home
 13. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateZ()
-14. Mijn eigen brein
+14. https://stackoverflow.com/questions/35856013/rotate-all-html-element-whole-page-90-degree-with-css
+15. https://stackoverflow.com/questions/2943548/how-to-reset-remove-chromes-input-highlighting-focus-border
+16. https://stackoverflow.com/questions/27144702/how-to-reset-display-property-for-flex-item
+17. https://www.quackit.com/css/functions/css_rotate_function.cfm
+18. https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness()
+19. Mijn eigen brein
 
 </details>
