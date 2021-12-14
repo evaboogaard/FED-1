@@ -183,9 +183,15 @@ Alt tekst weglaten behalve als de image een link is -> anders wordt de link niet
 ### Stand van zaken
 Ik ben sip dat het voorbij is en ik wou dat ik opnieuw kon beginnen met de kennis die ik nu heb, maar ik ben uiteindelijk heel blij met het resultaat! Het heeft me zo'n 1.4% minder onzeker gemaakt over mijn code-skills dus dat telt als een win in mijn boek.
 
-### Screenshot(s)
+Oh, en, het is stom dat je een conic gradient niet kan laten rotaten, dat had mijn leven zo veel beter gemaakt
 
-hier screenshot(s) van je eindresultaat
+### Screenshot(s)
+<img src="images/procesverslag/final1.png" width="500px" alt="">
+<img src="images/procesverslag/final2.png" width="500px" alt="">
+<img src="images/procesverslag/final3.png" width="500px" alt="">
+<img src="images/procesverslag/final4.png" width="500px" alt="">
+<img src="images/procesverslag/final5.png" width="500px" alt="">
+
 
 </details>
 
@@ -218,6 +224,9 @@ hier screenshot(s) van je eindresultaat
 16. https://stackoverflow.com/questions/27144702/how-to-reset-display-property-for-flex-item
 17. https://www.quackit.com/css/functions/css_rotate_function.cfm
 18. https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness()
-19. Mijn eigen brein
+19. https://css-tricks.com/adding-stroke-to-web-text/
+20. https://www.w3schools.com/cssref/pr_background-attachment.asp
+21. https://9elements.github.io/fancy-border-radius/
+22. Mijn eigen brein
 
 </details>

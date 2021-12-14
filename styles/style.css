@@ -68,16 +68,80 @@ body {
   font-family: var(--font-fam);
 }
 
+:root.epicmode body {
+  --blue: rgba(0, 0, 100, 0.5);
+  --dark-blue: rgb(5, 5, 58, 0.5);
+  --red: rgb(95, 0, 0, 0.5);
+  --dark-red: rgb(68, 3, 3, 0.5);
+  --yellow: rgb(88, 76, 4, 0.5);
+  --dark-yellow: rgb(80, 52, 0, 0.5);
+
+  background-image: conic-gradient(var(--background-color) 0% 5%,
+      var(--blue) 5% 9%,
+      var(--dark-blue) 9% 10%,
+      var(--background-color) 10% 15%,
+      var(--red) 15% 19%,
+      var(--dark-red) 19% 20%,
+      var(--background-color) 20% 25%,
+      var(--yellow) 25% 29%,
+      var(--dark-yellow) 29% 30%,
+      var(--background-color) 30% 35%,
+      var(--blue) 35% 39%,
+      var(--dark-blue) 39% 40%,
+      var(--background-color) 40% 45%,
+      var(--red) 45% 49%,
+      var(--dark-red) 49% 50%,
+      var(--background-color) 50% 55%,
+      var(--yellow) 55% 59%,
+      var(--dark-yellow) 59% 60%,
+      var(--background-color) 60% 65%,
+      var(--blue) 65% 69%,
+      var(--dark-blue)69% 70%,
+      var(--background-color) 70% 75%,
+      var(--red) 75% 79%,
+      var(--dark-red) 79% 80%,
+      var(--background-color) 80% 85%,
+      var(--yellow) 85% 89%,
+      var(--dark-yellow) 89% 90%,
+      var(--background-color) 90% 95%,
+      var(--red) 95% 99%,
+      var(--dark-red) 99% 100%);
+
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  background-position: center;
+
+  animation: conic-gradient 15s ease-in-out infinite alternate;
+}
+
+@keyframes conic-gradient {
+  0% {
+    box-shadow: inset 0 0 0 4000px var(--background-color);
+    z-index: 100;
+  }
+
+  50% {
+    box-shadow: inset 0 0 0 4000px var(--background-color);
+    z-index: 100;
+  }
+
+  100% {
+    box-shadow: inset 0 0 0 4000px var(--transparent-color);
+    z-index: 1;
+  }
+}
+
+
 main {
   display: flex;
   flex-direction: column;
-  margin: 0 1.7em 0 1.7em;
+  padding: 0 1.7em 0 1.7em;
 }
 
 /* #SmallScreensMatter */
 @media (max-width: 23em) {
   main {
-    margin: 0;
+    padding: 0;
   }
 }
 
@@ -94,7 +158,7 @@ header h1 {
 }
 
 a:focus p {
-  border: 3px solid rgb(0, 73, 119);
+  border: 3px solid var(--background-color);
   box-shadow: 0 0 0 3px var(--section-color);
   border-radius: 4px;
 }
@@ -102,6 +166,12 @@ a:focus p {
 a:active p {
   background-color: var(--background-color);
   color: var(--section-color);
+}
+
+button:focus{
+  border: 3px solid var(--background-color);
+  box-shadow: 0 0 0 3px var(--section-color);
+  border-radius: 4px;
 }
 
 
@@ -294,16 +364,25 @@ header form button:active {
   }
 }
 
+:root.epicmode .home section:nth-of-type(2),
+:root.epicmode .home section:nth-of-type(3),
+:root.epicmode .home section:nth-of-type(4),
+:root.epicmode .home section:nth-of-type(5),
+:root.epicmode .home section:nth-of-type(6),
+:root.epicmode .home section:nth-of-type(7) {
+  box-shadow: 0 0 .5em white;
+}
+
 /* White space on both sides when using big screens */
 @media (min-width: 80em) {
   body {
-    margin: 0 10% 0 10%;
+    padding: 0 10% 0 10%;
   }
 }
 
 @media (min-width: 100em) {
   body {
-    margin: 0 20% 0 20%;
+    padding: 0 20% 0 20%;
   }
 }
 
@@ -345,50 +424,63 @@ header form button:active {
   font-size: .9em;
   font-weight: 300;
   color: var(--heading-color);
+  text-align: center;
 
   transition: .4s;
 }
 
 @keyframes rainbow-animation {
   0% {
-    background-position:left bottom;
+    background-position: left bottom;
+    box-shadow: 0 0 2em var(--look-at-me);
   }
+
+  33%{
+    box-shadow: 0 0 1em var(--numbers-up);
+  }
+
+  66%{
+    box-shadow: 0 0 1.5em var(--what-goes-let-go);
+  }
+
   100% {
-    background-position:right top;
+    background-position: right top;
+    box-shadow: 0 0 2em var(--look-at-me);
   }
 }
 
 :root.epicmode .home section:nth-of-type(3) p,
 :root.epicmode .home section:nth-of-type(4)>a p:last-of-type,
-:root.epicmode .home section:nth-of-type(5) p{
-background-image: linear-gradient(
-  45deg,
-  var(--look-at-me),
-  var(--look-at-me-dark),
-  var(--numbers-up),
-  var(--numbers-up-dark),
-  var(--what-goes-let-go),
-  var(--what-goes-let-go-dark),
-  var(--look-at-me),
-  var(--look-at-me-dark),
-  var(--numbers-up),
-  var(--numbers-up-dark),
-  var(--what-goes-let-go),
-  var(--what-goes-let-go-dark),
-  var(--look-at-me)
-);
-background-size:200% 200%;
-background-position:left bottom;
+:root.epicmode .home section:nth-of-type(5) p {
+  background-image: linear-gradient(45deg,
+      var(--look-at-me),
+      var(--look-at-me-dark),
+      var(--numbers-up),
+      var(--numbers-up-dark),
+      var(--what-goes-let-go),
+      var(--what-goes-let-go-dark),
+      var(--look-at-me),
+      var(--look-at-me-dark),
+      var(--numbers-up),
+      var(--numbers-up-dark),
+      var(--what-goes-let-go),
+      var(--what-goes-let-go-dark),
+      var(--look-at-me));
+  background-size: 200% 200%;
+  background-position: left bottom;
 
-color: var(--footer-text);
+  color: var(--footer-text);
+  -webkit-text-stroke: .7px black;
+  font-size: 1em;
 
-animation: rainbow-animation 2s linear infinite paused;
+  animation: rainbow-animation 2s linear infinite paused;
 }
 
 :root.epicmode .home section:nth-of-type(3) p:hover,
 :root.epicmode .home section:nth-of-type(4)>a p:last-of-type:hover,
-:root.epicmode .home section:nth-of-type(5) p:hover{
+:root.epicmode .home section:nth-of-type(5) p:hover {
   animation-play-state: running;
+  border-radius: 70% 30% 70% 30% / 0% 100% 0% 100%;
 }
 
 @media (max-width: 23em) {
@@ -648,7 +740,37 @@ footer button:hover {
   }
 }
 
-@media (max-width: 25em){
+@media (max-width: 25em) {
+  @keyframes epicsingles {
+    0% {
+      transform: translate(0, 0);
+      opacity: 100%;
+    }
+
+    17.5% {
+      transform: translate(0, 100%);
+    }
+
+    32.5% {
+      transform: translate(80%, 100%);
+    }
+
+    67.5% {
+      transform: translate(80%, 0);
+      opacity: 70%;
+    }
+
+    82.5% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+      transform: translate(0, 0) rotate(1turn);
+    }
+  }
+}
+
+@media (min-width: 110em){
   @keyframes epicsingles {
     0% {
       transform: translate(0, 0);
@@ -656,15 +778,15 @@ footer button:hover {
     }
   
     17.5% {
-      transform: translate(0, 100%);
+      transform: translate(0, 14em);
     }
   
     32.5% {
-      transform: translate(80%, 100%);
+      transform: translate(25em, 14em);
     }
   
     67.5% {
-      transform: translate(80%, 0);
+      transform: translate(25em, 0);
       opacity: 70%;
     }
   
@@ -678,13 +800,43 @@ footer button:hover {
   }
 }
 
-@media (min-width: 30em){
+@media (min-width: 130em){
+  @keyframes epicsingles {
+    0% {
+      transform: translate(0, 0);
+      opacity: 100%;
+    }
+  
+    17.5% {
+      transform: translate(0, 14em);
+    }
+  
+    32.5% {
+      transform: translate(30em, 14em);
+    }
+  
+    67.5% {
+      transform: translate(30em, 0);
+      opacity: 70%;
+    }
+  
+    82.5% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(0, 0) rotate(1turn);
+    }
+  }
+}
+
+@media (min-width: 30em) {
   :root.epicmode .home section:first-of-type ul {
     left: 10%;
   }
 }
 
-@media (min-width: 40em){
+@media (min-width: 40em) {
   :root.epicmode .home section:first-of-type ul {
     left: 20%;
   }
@@ -745,6 +897,10 @@ footer button:hover {
 @media (max-width: 44em) {
   .home section:first-of-type ul li.playsingle {
     height: 25em;
+  }
+
+  :root.epicmode .home section:first-of-type ul li.playsingle {
+    height: 10em;
   }
 }
 
@@ -814,10 +970,8 @@ footer button:hover {
   font-weight: 300;
 }
 
-
-.goingup {
-  margin-top: -2em;
-  transition: .5s;
+.home section:first-of-type ul li h2.goingup {
+  top: .2em;
 }
 
 /* NEW text */
@@ -882,6 +1036,19 @@ footer button:hover {
   background-color: var(--what-goes-let-go-dark);
 }
 
+@media (max-width: 22em){
+  :root.epicmode .home section:first-of-type ul{
+    height: 40em;
+  }
+
+  :root.epicmode .home section:first-of-type ul li{
+    width: 100%;
+    position: relative;
+
+  border-radius: 0;
+    animation: none;
+  }
+}
 
 @media (min-width: 44em) {
 
@@ -946,7 +1113,11 @@ footer button:hover {
   }
 
   .home section:first-of-type ul li h2.goingup {
-    margin-top: -2.2em;
+    top: 30%;
+    font-weight: 400;
+    word-spacing: 30em;
+    font-size: 2.5em;
+    text-align: center;
   }
 
   /* PLAY text */
@@ -1727,7 +1898,6 @@ time:focus {
   }
 }
 
-
 @media (min-width: 55em) {
   .shop>section:first-of-type {
     grid-template-columns: 1fr 1fr 1fr;
@@ -1765,11 +1935,22 @@ time:focus {
   margin: 5em 0 6em 0;
 }
 
+.shop section:nth-of-type(3) {
+  margin: 5em 0 0 0;
+}
+
 @media (max-width: 20em) {
 
   .shop>section:nth-of-type(2),
   .shop>section:nth-of-type(3) {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 20em){
+  .shop>section:nth-of-type(2),
+  .shop>section:nth-of-type(3){
+  margin: 5em 1em 6em 1em;
   }
 }
 
@@ -1779,8 +1960,6 @@ time:focus {
   .shop>section:nth-of-type(3) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-
 }
 
 @media (min-width: 55em) {
@@ -1798,10 +1977,6 @@ time:focus {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   }
-}
-
-.shop section:nth-of-type(3) {
-  margin: 5em 0 0 0;
 }
 
 .shop section:first-of-type a:focus,
@@ -1826,10 +2001,6 @@ time:focus {
   color: var(--store-heading);
 }
 
-.shop section:nth-of-type(3) h1 {
-  top: -2%;
-}
-
 @media (max-width: 23em) {
   .shop section:nth-of-type(2) h1 {
     top: -2%;
@@ -1840,18 +2011,28 @@ time:focus {
   }
 }
 
+.shop section:nth-of-type(3) h1 {
+  top: -2%;
+}
+
 @media (min-width: 45em) {
   .shop section:nth-of-type(2) h1 {
     top: -6%;
   }
 }
 
+@media (min-width: 50em){
+  .shop>section:nth-of-type(3) h1 {
+    top: -3%;
+  }
+}
+
 @media (min-width: 55em) {
-  .shop section:nth-of-type(2) h1 {
+  .shop>section:nth-of-type(2) h1 {
     top: -8%;
   }
 
-  .shop section:nth-of-type(3) h1 {
+  .shop>section:nth-of-type(3) h1 {
     top: -4%;
   }
 }
@@ -2376,7 +2557,7 @@ time:focus {
   right: 0;
   top: 0;
 
-  background: rgba(0, 0, 0, 0) center / 250px 250px;
+  background: var(--transparent-color) center / 250px 250px;
 }
 
 :root.epicmode .stars1 {
