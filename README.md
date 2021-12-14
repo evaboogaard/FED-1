@@ -186,11 +186,11 @@ Ik ben sip dat het voorbij is en ik wou dat ik opnieuw kon beginnen met de kenni
 Oh, en, het is stom dat je een conic gradient niet kan laten rotaten, dat had mijn leven zo veel beter gemaakt
 
 ### Screenshot(s)
-<img src="images/procesverslag/final1.png" width="500px" alt="">
-<img src="images/procesverslag/final2.png" width="500px" alt="">
-<img src="images/procesverslag/final3.png" width="500px" alt="">
-<img src="images/procesverslag/final4.png" width="500px" alt="">
-<img src="images/procesverslag/final5.png" width="500px" alt="">
+<img src="images/procesverslag/final1.png" width="250px" alt="">
+<img src="images/procesverslag/final2.png" width="250px" alt="">
+<img src="images/procesverslag/final3.png" width="250px" alt="">
+<img src="images/procesverslag/final4.png" width="250px" alt="">
+<img src="images/procesverslag/final5.png" width="250px" alt="">
 
 
 </details>
